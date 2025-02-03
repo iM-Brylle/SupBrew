@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/introSlider"
+    tools:context=".IntroSlider"
+    android:background="@drawable/background_img">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-16dp">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/second_logo" />
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@color/transparent"
+            android:text="Skip"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/sofia_semibold"/>
+
+        <ImageView
+            android:id="@+id/spanish"
+            android:layout_width="370dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/round_corner"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/spanish_img" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spanish"
+            android:layout_alignLeft="@+id/spanish"
+            android:layout_alignRight="@id/spanish"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="2dp"
+            android:fontFamily="@font/sofia_black"
+            android:text="Brewed to Perfection, Just for you."
+            android:textColor="@color/darkbrown"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_alignLeft="@+id/spanish"
+            android:layout_alignRight="@id/spanish"
+            android:layout_marginTop="15dp"
+            android:text="Elevate your coffee experience."
+            android:textColor="@color/darkbrown"
+            android:textSize="20sp"
+            android:fontFamily="@font/sofia_semibold"/>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="18sp"
+            android:backgroundTint="@color/darkbrown"
+            android:padding="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/spanish"
+            android:layout_alignRight="@id/spanish"
+            android:layout_marginBottom="15dp"
+            app:cornerRadius="8dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

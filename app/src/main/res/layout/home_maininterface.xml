@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_maininterface"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_img">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/second_logo" />
+
+        <TextView
+            android:id="@+id/text1home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sofia_black"
+            android:text="Find your,\nbest coffee."
+            android:textColor="@color/darkbrown"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/text1home"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_gray"
+            android:hint="Search"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_footer"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_home"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="10dp"
+                android:background="@color/transparent"
+                android:text="Home"
+                android:textColor="@color/darkbrown"
+                android:textSize="14sp"
+                android:fontFamily="@font/sofia_semibold" />
+
+            <Button
+                android:id="@+id/favoriteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_favorite"
+                android:layout_toEndOf="@+id/homeBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/transparent"
+                android:text="Home"
+                android:textColor="@color/darkbrown"
+                android:textSize="14sp"
+                android:fontFamily="@font/sofia_semibold" />
+
+            <Button
+                android:id="@+id/orderBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_order"
+                android:layout_toEndOf="@+id/favoriteBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/transparent"
+                android:text="Home"
+                android:textColor="@color/darkbrown"
+                android:textSize="14sp"
+                android:fontFamily="@font/sofia_semibold" />
+
+            <Button
+                android:id="@+id/bagBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_bag"
+                android:layout_toEndOf="@+id/orderBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/transparent"
+                android:text="Home"
+                android:textColor="@color/darkbrown"
+                android:textSize="14sp"
+                android:fontFamily="@font/sofia_semibold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
