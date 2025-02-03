@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/background_img">
+
+    <RelativeLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="22sp"
+            android:textColor="@color/darkbrown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/sofia_bold"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_favorite"
+            android:layout_marginStart="380dp"
+            android:layout_marginTop="25dp"/>
+
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back_btn"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="380dp"
+            android:layout_height="800dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout2"
+            android:layout_width="380dp"
+            android:layout_height="800dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_details">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/spanish_detail_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/coffeename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spanish Latte"
+                android:textSize="27sp"
+                android:fontFamily="@font/sofia_bold"
+                android:textColor="@color/darkbrown"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="330dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ice / Hot"
+                android:textSize="18sp"
+                android:layout_alignLeft="@+id/coffeename"
+                android:layout_below="@+id/coffeename"
+                android:fontFamily="@font/sofia_regular"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_alignLeft="@+id/coffeename"
+                android:layout_below="@+id/text2"
+                android:fontFamily="@font/sofia_medium"
+                android:textSize="22sp"
+                android:textColor="@color/darkbrown"
+                android:layout_marginTop="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum odor amet, consectetuer adipiscing elit. Enim orci fermentum congue, libero rutrum tempus sem...Read More"
+                android:layout_alignLeft="@+id/coffeename"
+                android:layout_alignRight="@+id/image"
+                android:layout_below="@+id/text3"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/sofia_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textSize="27sp"
+                android:layout_alignLeft="@+id/text3"
+                android:layout_below="@+id/text3"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/sofia_bold"
+                android:textColor="@color/darkbrown"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
