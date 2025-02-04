@@ -54,7 +54,9 @@
             android:layout_height="800dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="80dp"
-            android:background="@drawable/bg_details">
+            android:background="@drawable/bg_details"
+            android:elevation="24dp"
+            >
 
             <ImageView
                 android:id="@+id/image"
@@ -87,6 +89,14 @@
                 android:layout_below="@+id/coffeename"
                 android:fontFamily="@font/sofia_regular"/>
 
+            <ImageView
+                android:layout_width="340dp"
+                android:layout_height="5dp"
+                android:src="@drawable/line"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"/>
+
             <TextView
                 android:id="@+id/text3"
                 android:layout_width="wrap_content"
@@ -100,6 +110,7 @@
                 android:layout_marginTop="32dp"/>
 
             <TextView
+                android:id="@+id/textdes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lorem ipsum odor amet, consectetuer adipiscing elit. Enim orci fermentum congue, libero rutrum tempus sem...Read More"
@@ -110,16 +121,182 @@
                 android:fontFamily="@font/sofia_regular"/>
 
             <TextView
+                android:id="@+id/text4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Type"
                 android:textSize="27sp"
                 android:layout_alignLeft="@+id/text3"
-                android:layout_below="@+id/text3"
-                android:layout_marginTop="60dp"
+                android:layout_below="@+id/textdes"
+                android:layout_marginTop="12dp"
                 android:fontFamily="@font/sofia_bold"
                 android:textColor="@color/darkbrown"/>
 
+            <Button
+                android:id="@+id/iced"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Iced"
+                android:textSize="16sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="26dp"
+                android:layout_below="@+id/text4"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_details"
+                android:elevation="24dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/hot"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Hot"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="26dp"
+                android:layout_marginStart="35dp"
+                android:layout_below="@+id/text4"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_details"
+                android:elevation="24dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textSize="27sp"
+                android:layout_alignLeft="@+id/text3"
+                android:layout_below="@+id/iced"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sofia_bold"
+                android:textColor="@color/darkbrown"/>
+
+            <Button
+                android:id="@+id/size1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="16 oz"
+                android:textSize="16sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="26dp"
+                android:layout_below="@+id/text5"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_details"
+                android:elevation="24dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/size2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="22 oz"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="26dp" 
+                android:layout_marginStart="35dp"
+                android:layout_below="@+id/text5"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_details"
+                android:elevation="24dp"
+                android:layout_marginTop="10dp"/>
+            
+            <Button
+                android:id="@+id/addtobag"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Add to Bag"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/size1"
+                android:background="@drawable/bg_addtobagbtn"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="48dp"
+                android:elevation="24dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/buynow"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Buy now"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/size1"
+                android:background="@drawable/bg_buynowbrown"
+                android:layout_marginTop="28dp"
+                android:elevation="24dp"
+                android:layout_marginEnd="48dp"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_footer"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_home"
+                android:background="@color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:paddingTop="16dp"
+                android:text="Home"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/darkbrown"/>
+
+            <Button
+                android:id="@+id/favoriteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_favorite"
+                android:layout_toEndOf="@id/homeBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:paddingTop="16dp"
+                android:background="@color/transparent"
+                android:text="Favorite"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/darkbrown"/>
+
+            <Button
+                android:id="@+id/orderBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_order"
+                android:layout_toEndOf="@id/favoriteBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:paddingTop="16dp"
+                android:background="@color/transparent"
+                android:text="Favorite"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/darkbrown"/>
+
+            <Button
+                android:id="@+id/bagBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_bag"
+                android:layout_toEndOf="@id/orderBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:paddingTop="16dp"
+                android:background="@color/transparent"
+                android:text="Favorite"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/darkbrown"/>
 
         </RelativeLayout>
 
