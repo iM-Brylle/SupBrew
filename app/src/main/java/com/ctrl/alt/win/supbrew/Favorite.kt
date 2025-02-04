@@ -8,17 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ThirdSlider : AppCompatActivity() {
+class Favorite : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.third_slider)
-
-        val trynowButton: Button = findViewById(R.id.trynow_btn)
-
-        trynowButton.setOnClickListener {
-            val intent = Intent(this@ThirdSlider, Login::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.favorite)
     }
 }

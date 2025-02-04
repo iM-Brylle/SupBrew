@@ -22,22 +22,15 @@
             android:scaleType="centerCrop"
             android:src="@drawable/second_logo" />
 
-        <FrameLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="14dp"
+            android:contentDescription="backButton" />
 
-            <ImageView
-                android:id="@+id/backButtonImage"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:contentDescription="backButton"
-                android:scaleType="fitCenter"
-                android:src="@drawable/back_btn" />
-
-        </FrameLayout>
 
         <RelativeLayout
             android:id="@+id/relative_layout"
@@ -115,6 +108,7 @@
                 android:layout_marginEnd="24sp"
                 android:layout_marginTop="290sp"
                 android:background="@android:color/transparent"
+                android:contentDescription="showpasswordbutton"
                 android:src="@drawable/ic_show_password"
                 android:visibility="visible"/>
 
@@ -140,6 +134,7 @@
                 android:layout_marginEnd="24sp"
                 android:layout_marginTop="370sp"
                 android:background="@android:color/transparent"
+                android:contentDescription="showpasswordbutton"
                 android:src="@drawable/ic_show_password"
                 android:visibility="visible"/>
 
@@ -149,7 +144,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="10dp"
-                android:backgroundTint="@color/darkbrown"
+                android:background="@drawable/bg_brownbutton"
+                android:textColor="@color/white"
                 android:text="Login"
                 app:cornerRadius="8dp" />
 

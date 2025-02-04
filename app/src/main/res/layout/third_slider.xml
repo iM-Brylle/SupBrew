@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/introSlider"
-    tools:context=".IntroSlider"
+    android:id="@+id/thirdSlider"
+    tools:context=".ThirdSlider"
     android:background="@drawable/background_img">
 
 
@@ -42,7 +42,7 @@
             android:layout_width="370dp"
             android:layout_height="400dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="120dp"
             android:background="@drawable/round_corner"
             android:clipToOutline="true"
             android:scaleType="centerCrop"
@@ -75,18 +75,22 @@
             android:fontFamily="@font/sofia_semibold"/>
 
         <Button
-            android:id="@+id/trynowButton"
+            android:id="@+id/trynow_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Try Now"
-            android:textSize="18sp"
-            android:backgroundTint="@color/darkbrown"
-            android:padding="16dp"
-            android:layout_alignParentBottom="true"
             android:layout_alignLeft="@id/blueberry"
             android:layout_alignRight="@id/blueberry"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="1dp"
             android:layout_marginBottom="15dp"
-            app:cornerRadius="8dp"/>
+            android:background="@drawable/bg_brownbutton"
+            android:padding="16dp"
+            android:text="Try Now"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            />
 
     </RelativeLayout>
 

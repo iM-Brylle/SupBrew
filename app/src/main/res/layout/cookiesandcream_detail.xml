@@ -62,7 +62,7 @@
                 android:layout_width="350dp"
                 android:layout_height="300dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/spanish_detail_image"
+                android:src="@drawable/cookiesandcream_detail_image"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 />
@@ -71,7 +71,7 @@
                 android:id="@+id/coffeename"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spanish Latte"
+                android:text="Cookies and Cream"
                 android:textSize="27sp"
                 android:fontFamily="@font/sofia_bold"
                 android:textColor="@color/darkbrown"
@@ -82,7 +82,7 @@
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ice / Hot"
+                android:text="Non - Coffee"
                 android:textSize="18sp"
                 android:layout_alignLeft="@+id/coffeename"
                 android:layout_below="@+id/coffeename"
@@ -145,21 +145,6 @@
                 android:elevation="24dp"
                 android:layout_marginTop="10dp"/>
 
-            <Button
-                android:id="@+id/hot"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Hot"
-                android:textSize="16sp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="26dp"
-                android:layout_marginStart="35dp"
-                android:layout_below="@+id/text4"
-                android:textAllCaps="false"
-                android:background="@drawable/bg_details"
-                android:elevation="24dp"
-                android:layout_marginTop="10dp"/>
-
             <TextView
                 android:id="@+id/text5"
                 android:layout_width="wrap_content"
@@ -193,14 +178,14 @@
                 android:text="22 oz"
                 android:textSize="16sp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="26dp" 
+                android:layout_marginEnd="26dp"
                 android:layout_marginStart="35dp"
                 android:layout_below="@+id/text5"
                 android:textAllCaps="false"
                 android:background="@drawable/bg_details"
                 android:elevation="24dp"
                 android:layout_marginTop="10dp"/>
-            
+
             <Button
                 android:id="@+id/addtobag"
                 android:layout_width="130dp"

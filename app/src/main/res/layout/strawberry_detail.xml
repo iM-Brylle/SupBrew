@@ -62,7 +62,7 @@
                 android:layout_width="350dp"
                 android:layout_height="300dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/spanish_detail_image"
+                android:src="@drawable/strawberry_detail_image"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 />
@@ -71,7 +71,7 @@
                 android:id="@+id/coffeename"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spanish Latte"
+                android:text="Strawberry"
                 android:textSize="27sp"
                 android:fontFamily="@font/sofia_bold"
                 android:textColor="@color/darkbrown"
@@ -82,7 +82,7 @@
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ice / Hot"
+                android:text="Refresher"
                 android:textSize="18sp"
                 android:layout_alignLeft="@+id/coffeename"
                 android:layout_below="@+id/coffeename"
@@ -119,46 +119,7 @@
                 android:layout_marginTop="2dp"
                 android:fontFamily="@font/sofia_regular"/>
 
-            <TextView
-                android:id="@+id/text4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Type"
-                android:textSize="27sp"
-                android:layout_alignLeft="@+id/text3"
-                android:layout_below="@+id/textdes"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/sofia_bold"
-                android:textColor="@color/darkbrown"/>
 
-            <Button
-                android:id="@+id/iced"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Iced"
-                android:textSize="16sp"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="26dp"
-                android:layout_below="@+id/text4"
-                android:textAllCaps="false"
-                android:background="@drawable/bg_details"
-                android:elevation="24dp"
-                android:layout_marginTop="10dp"/>
-
-            <Button
-                android:id="@+id/hot"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Hot"
-                android:textSize="16sp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="26dp"
-                android:layout_marginStart="35dp"
-                android:layout_below="@+id/text4"
-                android:textAllCaps="false"
-                android:background="@drawable/bg_details"
-                android:elevation="24dp"
-                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/text5"
@@ -167,7 +128,7 @@
                 android:text="Size"
                 android:textSize="27sp"
                 android:layout_alignLeft="@+id/text3"
-                android:layout_below="@+id/iced"
+                android:layout_below="@+id/textdes"
                 android:layout_marginTop="12dp"
                 android:fontFamily="@font/sofia_bold"
                 android:textColor="@color/darkbrown"/>
@@ -193,14 +154,14 @@
                 android:text="22 oz"
                 android:textSize="16sp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="26dp" 
+                android:layout_marginEnd="26dp"
                 android:layout_marginStart="35dp"
                 android:layout_below="@+id/text5"
                 android:textAllCaps="false"
                 android:background="@drawable/bg_details"
                 android:elevation="24dp"
                 android:layout_marginTop="10dp"/>
-            
+
             <Button
                 android:id="@+id/addtobag"
                 android:layout_width="130dp"

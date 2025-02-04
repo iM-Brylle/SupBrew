@@ -42,7 +42,7 @@
             android:layout_width="370dp"
             android:layout_height="400dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="120dp"
             android:background="@drawable/round_corner"
             android:clipToOutline="true"
             android:scaleType="centerCrop"
@@ -84,11 +84,12 @@
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
             android:layout_marginBottom="17dp"
-            android:backgroundTint="@color/darkbrown"
+            android:background="@drawable/bg_brownbutton"
             android:padding="16dp"
             android:text="Next"
-            android:textSize="18sp"
-            app:cornerRadius="8dp" />
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
