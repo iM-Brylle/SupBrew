@@ -24,18 +24,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/second_logo" />
 
-        <Button
-            android:id="@+id/btn_skip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_margin="10dp"
-            android:background="@color/transparent"
-            android:text="Skip"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:fontFamily="@font/sofia_semibold"/>
 
         <ImageView
             android:id="@+id/mochanish"
@@ -90,6 +78,14 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skip"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="16dp"/>
 
     </RelativeLayout>
 

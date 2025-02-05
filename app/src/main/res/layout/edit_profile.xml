@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <RelativeLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_img">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/second_logo" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="14dp"
+            android:contentDescription="backButton" />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="380dp"
+            android:layout_height="470dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_square"
+            android:alpha="0.2"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout2"
+            android:layout_width="380dp"
+            android:layout_height="470dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

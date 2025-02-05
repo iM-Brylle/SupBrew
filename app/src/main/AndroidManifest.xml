@@ -13,10 +13,13 @@
         android:theme="@style/Theme.SupBrew"
         tools:targetApi="31">
 
+        <activity android:name=".ChangePassword"
+            android:exported="true"/>
+        <activity android:name=".MainActivity"
+            android:exported="true"/>
         <activity android:name=".ForgotPassword"
             android:label="ForgotPassword" />
-        <activity
-            android:name=".Home"
+        <activity android:name=".Home"
             android:exported="true" />
         <activity
             android:name=".SignUp"
